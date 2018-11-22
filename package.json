@@ -1,7 +1,6 @@
 {
-  "name": "wood-userrole",
-  "version": "1.0.1",
-  "description": "",
+  "name": "wood-userroles",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +10,7 @@
     "url": "git+https://github.com/jlego/wood-userrole.git"
   },
   "keywords": [
-    "wood-userrole"
+    "wood-userroles"
   ],
   "author": "jlego",
   "license": "ISC",
@@ -21,5 +20,7 @@
   "homepage": "https://github.com/jlego/wood-userrole#readme",
   "dependencies": {
     "wood-util": "^1.0.7"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
