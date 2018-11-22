@@ -1,5 +1,5 @@
 {
-  "name": "wood-userroles",
+  "name": "wood-userrole",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/jlego/wood-userrole.git"
   },
   "keywords": [
-    "wood-userroles"
+    "wood-userrole"
   ],
   "author": "jlego",
   "license": "ISC",
