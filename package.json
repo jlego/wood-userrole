@@ -1,7 +1,12 @@
 {
   "name": "wood-userrole",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "wood-util": "^1.0.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,10 +22,5 @@
   "bugs": {
     "url": "https://github.com/jlego/wood-userrole/issues"
   },
-  "homepage": "https://github.com/jlego/wood-userrole#readme",
-  "dependencies": {
-    "wood-util": "^1.0.7"
-  },
-  "devDependencies": {},
-  "description": ""
+  "homepage": "https://github.com/jlego/wood-userrole#readme"
 }
