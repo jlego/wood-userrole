@@ -1,14 +1,12 @@
 /**
  * Wood Plugin Module.
  * user role
- * by jlego on 2018-11-21
+ * by jlego on 2018-11-28
  */
-const { Util } = require('wood-util')();
-
 module.exports = (app = {}, config = {}) => {
   app.CheckRole = async function(req, res, next) {
     if(req.User){
-      let RedisCaches = new app.Plugin('redis').Redis(`userrole.${req.User.role}`, config.redis),
+      let RedisCaches = new app.Plugin('redis').Redis(`userrole.${req.User.role}`, config.redis, app),
         urlArr = req.url.split('/'),
         actionType = urlArr.pop(),
         key = urlArr.join('_'),
@@ -28,12 +26,12 @@ module.exports = (app = {}, config = {}) => {
         if(actionArr.includes(action)){
           next();
         }else{
-          if(res.print) res.print(Util.error(`用户没有[${action}]权限`));
+          if(res.print) res.print(app.error(`用户没有[${action}]权限`));
           return false;
         }
       }
     }
-    if(res.print) res.print(Util.error('找不到当前用户信息'));
+    if(res.print) res.print(app.error('找不到当前用户信息'));
     return false;
   };
   return app;
