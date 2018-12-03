@@ -34,5 +34,6 @@ module.exports = (app = {}, config = {}) => {
     if(res.print) res.print(app.error('找不到当前用户信息'));
     return false;
   };
+  if(app.addAppProp) app.addAppProp('Userrole', app.CheckRole);
   return app;
 }
