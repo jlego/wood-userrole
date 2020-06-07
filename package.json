@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "wood-util": "^1.0.7"
+    "wood-util": "^1.0.17"
   },
   "devDependencies": {},
   "scripts": {
